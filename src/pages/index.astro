@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
+import ResponsiveNavbar from "../components/ResponsiveNavbar";
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
@@ -12,7 +12,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
 	<body>
-		<Header />
+		<ResponsiveNavbar client:only/>
 		<main>
 			<h1>🧑‍🚀 Hello, Astronaut!</h1>
 			<p>
